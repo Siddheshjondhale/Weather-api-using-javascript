@@ -13,10 +13,8 @@ searched.addEventListener('keyup', (e) => {
 
 
 button.addEventListener("click", weatherfind)
-apiKey: "90ff4bbf108c7fc4cdc1bfb36fce3f7c"
 // http://api.openweathermap.org/data/2.5/find?q=London&units=metric&appid=90ff4bbf108c7fc4cdc1bfb36fce3f7c
 function weatherfind(e) {
-    // apiKey: "90ff4bbf108c7fc4cdc1bfb36fce3f7c"
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + searched.value + '&units=metric' + '&appid=90ff4bbf108c7fc4cdc1bfb36fce3f7c')
         .then(response => response.json())
 
